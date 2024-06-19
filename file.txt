@@ -1,0 +1,61 @@
+[app]
+
+    video_source = "pexels"  # "pexels" or "pixabay"
+    # Pexels API Key
+    pexels_api_keys = ["Sm5BSKNaotcXe5HgC6ugLAJ5Gdmi8cHfTFiRtGGQSpPAPVqLaPzg2WOe","3JU7sXBJU7RY2sUKYCuNdFSEhwaPa9sXPNWBhMapNjT3LThYYCgbrz1F"]
+    
+    # LLM are used
+    llm_provider="gemini"
+
+    # OpenAI API Key
+    #openai_api_key = ""
+    #openai_base_url = ""
+    #openai_model_name = "gpt-3.5-turbo"
+
+    ########## Gemini API Key
+    gemini_api_key="AIzaSyAM2Qf7NRpT3apm-l-rOXdJryoR3fhgVTY"
+    gemini_model_name = "gemini-1.5-pro"
+
+    # Subtitle Provider, "edge" or "whisper"
+    # subtitle_provider = "edge"
+
+    # ImageMagick (automatically detected, except on Windows)
+    # imagemagick_path = ""
+
+    # FFMPEG (automatically detected)
+    # ffmpeg_path = ""
+
+    #########################################################################################
+    endpoint=""
+
+
+    # Video material storage location    
+    material_directory = "" # default folder, the default folder is ./storage/cache_videos under the current project
+
+    # Used for state management of the task
+    enable_redis = false
+    redis_host = "localhost"
+    redis_port = 6379
+    redis_db = 0
+    redis_password = ""
+
+    # Max task
+    max_concurrent_tasks = 5
+
+    # webui hide baisc config panel
+    hide_config = false
+
+[proxy]
+    ### Use a proxy to access the Pexels API
+    ### Format: "http://<username>:<password>@<proxy>:<port>"
+    ### Example: "http://user:pass@proxy:1234"
+    ### Doc: https://requests.readthedocs.io/en/latest/user/advanced/#proxies
+
+    # http = "http://10.10.1.10:3128"
+    # https = "http://10.10.1.10:1080"
+
+[azure]
+    # Azure Speech API Key
+    # Get your API key at https://portal.azure.com/#view/Microsoft_Azure_ProjectOxford/CognitiveServicesHub/~/SpeechServices
+    speech_key=""
+    speech_region=""
